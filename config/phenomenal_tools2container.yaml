@@ -1,0 +1,17 @@
+global:
+  docker_repo:
+  max_pod_retrials: 3
+assignment:
+- tools_id:
+   - bwa_mem
+  docker_repo_override: docker.io
+  docker_owner_override: biocontainers
+  docker_image_override: bwa
+  docker_tag_override: 0.7.15
+
+- tools_id:
+   - fastqc
+  docker_repo_override: docker.io
+  docker_owner_override: biocontainers
+  docker_image_override: fastqc
+  docker_tag_override: v0.11.5

@@ -15,3 +15,10 @@ assignment:
   docker_owner_override: biocontainers
   docker_image_override: fastqc
   docker_tag_override: v0.11.5
+
+- tools_id:
+   - freebayes
+  docker_repo_override: quay.io
+  docker_owner_override: biocontainers
+  docker_image_override: freebayes
+  docker_tag_override: 1.2.0--py37h56106d0_4

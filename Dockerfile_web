@@ -1,0 +1,3 @@
+FROM quay.io/ebigxa/galaxy-web-k8s:v18.05
+
+COPY galaxy_supervisord.conf /etc/supervisor/conf.d/galaxy.conf

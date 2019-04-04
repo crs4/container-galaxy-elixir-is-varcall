@@ -141,5 +141,6 @@
 		<tool file="elixir-is/bwa_mem-ebb02ba5987c/bwa_mem.xml" />
 		<tool file="elixir-is/fastqc-3e1cdf5406db/rgFastQC.xml" />
 		<tool file="elixir-is/freebayes-156b60c1530f/freebayes.xml" />
+		<tool file="elixir-is/samtools_sort-f56bdb93ae58/samtools_sort.xml" />
   </section>
 </toolbox>

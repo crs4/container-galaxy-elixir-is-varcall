@@ -88,6 +88,7 @@
     <tool id="fastqc" destination="dynamic-k8s-small" resources="all" />
     <tool id="bwa_mem" destination="dynamic-k8s-medium" resources="all" />
     <tool id="freebayes" destination="dynamic-k8s-medium" resources="all" />
+    <tool id="samtools_sort" destination="dynamic-k8s-medium" resources="all" />
   </tools>
   <resources default="all">
     <!-- Group different parameters defined in job_resource_params_conf.xml

@@ -22,3 +22,10 @@ assignment:
   docker_owner_override: biocontainers
   docker_image_override: freebayes
   docker_tag_override: 1.2.0--py37h56106d0_4
+
+- tools_id:
+   - samtools_sort
+  docker_repo_override: docker.io
+  docker_owner_override: biocontainers
+  docker_image_override: samtools
+  docker_tag_override: v1.7.0_cv3

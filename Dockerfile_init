@@ -14,15 +14,22 @@ RUN virtualenv venv-workflow && \
                   deactivate && \
                   virtualenv --relocatable venv-workflow"
 
-COPY config/job_conf.xml config/job_conf.xml
-COPY config/tool_conf.xml config/tool_conf.xml
-COPY config/container_resolvers_conf.xml config/container_resolvers_conf.xml
-COPY config/sanitize_whitelist.txt config/sanitize_whitelist.txt
+COPY \
+  config/job_conf.xml \
+  config/tool_conf.xml \
+  config/container_resolvers_conf.xml \
+  config/sanitize_whitelist.txt \
+  config/tool_data_table_conf.xml \
+  config/
+
 COPY tools tools
+COPY tool-data tool-data
 
 # Reqs/limits
-COPY config/job_resource_params_conf.xml config/job_resource_params_conf.xml
-COPY config/phenomenal_tools2container.yaml config/phenomenal_tools2container.yaml
+COPY \
+  config/job_resource_params_conf.xml \
+  config/phenomenal_tools2container.yaml \
+  config/
 COPY rules/k8s_destinations.py /galaxy-central/lib/galaxy/jobs/rules/k8s_destination.py
 
 COPY workflows workflows_to_load

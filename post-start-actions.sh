@@ -9,3 +9,12 @@ source /export/venv-workflow/bin/activate && \
   /export/venv-workflow/bin/workflow-install -g http://127.0.0.1 -v -a $GALAXY_DEFAULT_ADMIN_KEY \
       -w /export/workflows_to_load --publish_workflows && \
   deactivate \
+
+# create directory for references
+set -o errexit
+
+RefDir=/export/references
+mkdir -p "${RefDir}"
+chown 1450:1450 "${RefDir}"
+chmod 2775 "${RefDir}"
+ln -s "${RefDir}" /export/galaxy-central/references

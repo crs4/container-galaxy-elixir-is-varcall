@@ -35,12 +35,12 @@ using the provided Dockerfiles.
 This documentation assumes you have access to a Kubernetes cluster.  If you
 don't, but you have access to cloud resources (i.e.,
 Infrastructure-as-a-Service) you can use any of the standard Kubernetes
-deployment tools available (e.g., [KubeNow](http://kubenow.readthedocs.io),
+deployment tools available -- e.g., [KubeNow](http://kubenow.readthedocs.io),
 [Kubespray](https://github.com/kubernetes-sigs/kubespray) or its simplified
 front-end (but OpenStack-only)
 [manage-cluster](https://github.com/tdm-project/tdm-manage-cluster).
 Alternatively, some commercial vendors also offer managed-Kubernetes services
-(e.g., [Amazon EKS](https://aws.amazon.com/eks/).
+(e.g., [Amazon EKS](https://aws.amazon.com/eks/)).
 
 
 From here, we assume you already have access to a Kubernetes cluster.
@@ -65,6 +65,8 @@ documentation for the Galaxy-Kubernetes Helm
 chart](https://github.com/galaxyproject/galaxy-kubernetes#available-chart-variables).
 Some settings that require particular attention:
 
+| Property       | Meaning |
+|----------------|---------|
 | galaxy_conf.\* | All your usual galaxy settings usually in `galaxy.ini` or `galaxy.yaml` |
 | persistence.size | Size of storage volume |
 

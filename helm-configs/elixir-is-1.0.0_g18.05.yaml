@@ -46,6 +46,7 @@ job_conf:
     enable_k8: true
     k8s_fs_group_id: "1450"
     k8s_supplemental_group_id: "1450"
+    k8s_persistent_volume_claim_name: gv0
   destinations:
     default: dynamic-k8s-dispatcher
     no_docker_default: local_no_container

@@ -5,7 +5,7 @@
 init:
   image:
     repository: crs4/galaxy-elixir-is-vc-init
-    tag: v18.05-cv0.1
+    tag: v18.05-cv0.2
     pullPolicy: IfNotPresent
   force_copy: "__config__,__galaxy-central__,__tools__,__tool-data__"
 

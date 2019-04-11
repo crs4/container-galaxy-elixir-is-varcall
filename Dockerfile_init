@@ -4,7 +4,7 @@ FROM quay.io/ebigxa/galaxy-init:v18.05
 LABEL Description="Elixir IS on running Galaxy variant calling pipelines on microservices"
 LABEL software="Galaxy Init"
 LABEL software.version="18.05"
-LABEL version="0.1"
+LABEL version="0.2"
 
 RUN virtualenv venv-workflow && \
     /bin/bash -c "source venv-workflow/bin/activate && \
